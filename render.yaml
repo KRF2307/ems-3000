@@ -1,0 +1,11 @@
+# Exported from Render on 2024-08-13T20:25:34Z
+services:
+- type: web
+  name: ems-3000
+  runtime: node
+  repo: https://github.com/KRF2307/ems-3000
+  plan: free
+  region: oregon
+  buildCommand: yarn
+  startCommand: "0"
+version: "1"
