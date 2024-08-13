@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Notification App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://www.pngkit.com/png/full/302-3020704_medical-emergency-medical-emergency-icon.png" alt="Emergency Medical Icon" class="header-image">
+            <h1>Emergency Notification</h1>
+        </header>
+        <main>
+            <form id="emergencyForm">
+                <div class="form-group">
+                    <label for="incidentType">เหตุอะไร:</label>
+                    <input type="text" id="incidentType" name="incidentType" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactNumber">เบอร์ที่เจ้าหน้าที่สามารถติดต่อได้:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="manualAddress">ที่เกิดเหตุอยู่ที่ไหน:</label>
+                    <input type="text" id="manualAddress" name="manualAddress" placeholder="Enter address here" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="additionalInfo">ข้อมูลที่เป็นประโยชน์ เช่น อาการคนไข้ จุดสังเกตุที่เกิดเหตุ:</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Enter additional information here"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="pinnedAddress">ปักหมุดที่เกิดิเหตุ:</label>
+                    <div id="map" class="map"></div>
+                </div>
+
+                <button type="button" class="button" id="sendAlert">Send Emergency Alert</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Emergency Notification App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
